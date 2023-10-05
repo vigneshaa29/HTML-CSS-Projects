@@ -1,0 +1,62 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+#navbar header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navbar li {
+  margin-bottom: 5px;
+}
+
+#navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#main-doc {
+  margin: 20px;
+}
+
+.main-section {
+  margin-bottom: 30px;
+}
+
+.main-section header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-section article {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  /* Styles to apply when the screen width is 768 pixels or less */
+  body {
+    font-size: 14px;
+  }
+
+  #navbar {
+    background-color: #444;
+    padding: 5px;
+  }
+
+  /* Add more styles as needed for smaller screens */
+}
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Selectors">Selectors</a></li>
+            <li><a class="nav-link" href="#Typography">Typography</a></li>
+            <li><a class="nav-link" href="#Colors">Colors</a></li>
+            <li><a class="nav-link" href="#Box_Model">Box Model</a></li>
+            <li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+            <li><a class="nav-link" href="#Animations">Animations</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    Cascading Style Sheets (CSS) is a style sheet language used for
+                    describing the presentation of a document written in HTML or XML.
+                    CSS describes how elements should be rendered on screen, on paper,
+                    in speech, or on other media.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <article>
+                <p>
+                In CSS, selectors are used to select and target specific HTML elements based on their attributes, classes, IDs, or relationships with other elements. By using selectors, developers can apply styles to individual elements or groups of elements, making it possible to create visually appealing and consistent designs across a website.</p>
+<p><ul>
+There are several types of selectors in CSS, each with its own syntax and functionality. The most commonly used selectors include:
+<li><h4>
+1. Element Selectors:</h4> These selectors target HTML elements based on their tag names. For example, the selector "p" targets all paragraph elements in the HTML document.</li>
+<p>Example:
+<code>p { font-size: 16px; }</code></p>
+<li><h4>
+2. Class Selectors:</h4> Class selectors target HTML elements based on their class attribute. A class is a way to group multiple elements together and apply the same styles to them. Class selectors are denoted by a dot (.) followed by the class name. For example, the selector ".my-class" targets all elements with the class "my-class".</li>
+<p>Examole:<code>.my-class { background-color: yellow; }</code></p>
+<li><h4>
+3. ID Selectors:</h4> ID selectors target HTML elements based on their unique ID attribute. An ID is assigned to only one element on a webpage and is denoted by a hash (#) followed by the ID name. For example, the selector "#my-id" targets the element with the ID "my-id".</li>
+<p>Example: <code>#my-id { border: 2px solid blue; }</code></p>
+<li><h4>
+4. Attribute Selectors:</h4> Attribute selectors target HTML elements based on their attributes or attribute values. These selectors are denoted by square brackets ([]). For example, the selector "[type='text']" targets all input elements with the attribute type set to "text".</li>
+<p>Example:<code>[type='text'] { width: 100%; }</code></p>
+<li><h4>
+5. Pseudo-classes and Pseudo-elements: </h4>Pseudo-classes and pseudo-elements allow developers to target specific states or parts of an element. Pseudo-classes are denoted by a colon (:) followed by the pseudo-class name, while pseudo-elements are denoted by a double colon (::) followed by the pseudo-element name. Examples of pseudo-classes include :hover, :active, and :nth-child, while examples of pseudo-elements include ::before and ::after.</li>
+<p>Example: <code>a:hover { text-decoration: underline; }</code></p>
+<li><h4>
+6. Combinators:</h4> Combinators are used to select elements based on their relationship with other elements. There are four types of combinators in CSS: descendant selector (space), child selector (greater than sign >), adjacent sibling selector (plus sign +), and general sibling selector (tilde ~). These combinators allow developers to target elements that are descendants, children, siblings, or adjacent to other elements.</li>
+<p>Example:<code>div > p { margin: 10px; }</code></p>
+</ul></p>
+<p>
+Selectors can also be combined to create more specific and targeted selections. For example, the selector "div.my-class" targets all div elements with the class "my-class", while the selector "ul li" targets all li elements that are descendants of ul elements.</p>
+<p>
+In addition to these basic selectors, CSS also provides advanced selectors such as attribute selectors with substring matching, negation selectors, and more. These advanced selectors offer even more flexibility in targeting specific elements based on complex criteria.</P>
+<p>
+Overall, selectors are a powerful tool in CSS that enable developers to precisely target and style HTML elements. By understanding the different types of selectors and how they work, developers can effectively apply styles to create visually appealing and well-structured webpages.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Typography">
+            <header>Typography</header>
+            <article>
+                <p>
+                    CSS (Cascading Style Sheets) provides various properties and values that allow developers to control the appearance of text on web pages.</p>
+<ul>
+    <li><h4>                    
+1.font-family:</h4>
+One of the fundamental typography concepts in CSS is font-family. This property specifies the typeface or font family to be used for displaying text. It allows developers to choose from a wide range of fonts available on users' devices or specify custom fonts using @font-face rule. The font-family property can be set to multiple values, allowing for fallback options if a particular font is not available.</li>
+<p>Example: <code>p{
+                    font-family: Arial, sans-serif;
+}
+                </code></p>
+<li><h4>
+2.font-size:</h4>
+It determines the size of the text. It can be specified in various units such as pixels, ems, rems, or percentages. The choice of unit depends on the desired scalability and responsiveness of the text. Additionally, CSS provides relative units like ems and rems that allow for more flexible and consistent sizing across different elements.</li>
+<p>Example:  <code>p{
+                    font-size: 16px;}
+                </code></p>
+<li>3.font-weight:</h4>
+Font-weight is another key concept that controls the thickness or boldness of the text. It can be set to values like normal, bold, bolder, lighter, or numeric values ranging from 100 to 900. The font-weight property is often used to highlight important information or headings within technical documentation pages.</li>
+<p>Example: <code>p{
+                    font-weight: bold;}
+                </code></p>
+<li><h4>4.line-height:</h4>
+Line-height is an essential property that determines the vertical space between lines of text. It affects the overall readability and legibility of content. By adjusting line-height appropriately, developers can improve the visual hierarchy and make the text more comfortable to read.</li>
+<p>Example: <code>p{
+                    line-height: 1.5;}
+                </code></p>
+<li><h4>5.Text-align:</h4>
+Text-align is a property used to control the horizontal alignment of text within its container. It can be set to values like left, right, center, or justify. Proper alignment helps in organizing content and making it visually appealing.</li>
+<p>Example:  <code>p{
+                    text-align: center;}
+                </code></ul>
+<p>
+CSS also provides properties like letter-spacing and word-spacing that control the spacing between characters and words respectively. These properties are useful for fine-tuning the appearance of text and improving readability.</p>
+<p>
+Text-decoration is a property that allows developers to add visual effects to text, such as underline, overline, line-through, or none. It can be used to indicate links or emphasize specific parts of the content.</p>
+<p>
+In addition to these concepts, CSS offers various other properties like text-transform (for transforming text to uppercase, lowercase, or capitalize), text-overflow (for handling overflow when text exceeds its container), and text-shadow (for adding shadows to text).</p>
+                    </p>
+                    </article>
+                    </section>
+                     <section class="main-section" id="Colors">
+            <header>Colors</header>
+            <article>
+                <p>
+                   The concept of colors in CSS (Cascading Style Sheets) is an essential aspect of web design and development. CSS provides a wide range of options for defining and manipulating colors on web pages. </p>
+<p>
+In CSS, colors can be specified using various formats, including named colors, hexadecimal notation, RGB (Red Green Blue) values, HSL (Hue Saturation Lightness) values, and more. The choice of color format depends on the specific requirements and preferences of the designer.</p>
+<p><h4>
+1. Named Colors:</h4>
+CSS provides a set of predefined named colors that can be used directly in style sheets. These named colors include common colors such as "red," "blue," "green," etc., as well as more specific shades like "darkorange," "mediumseagreen," and so on. Named colors are easy to use and remember, making them suitable for quick styling needs.</p>
+<p>Example:<code>p{
+                color: red;}
+            </code></p>
+<p><h4>
+2. Hexadecimal Notation:</h4>
+Hexadecimal notation is another popular way to represent colors in CSS. It uses a combination of six characters, consisting of numbers (0-9) and letters (A-F), preceded by a hash symbol (#). Each pair of characters represents the intensity of red, green, and blue respectively. For example, #FF0000 represents pure red, #00FF00 represents pure green, and #0000FF represents pure blue. By adjusting the intensity values, a wide range of colors can be achieved.</p>
+<p>Example:<code>p{
+                background-color: #FF0000;}
+            </code> </p>
+<p><h4>
+3. RGB Values:</h4>
+RGB values allow specifying colors by defining the intensity levels of red, green, and blue individually. Each intensity level ranges from 0 to 255. For example, rgb(255, 0, 0) represents pure red, rgb(0, 255, 0) represents pure green, and rgb(0, 0, 255) represents pure blue. By adjusting the intensity values, any desired color can be created.</p>
+<p>Example:<code>p{
+                border-color: rgb(0, 0, 255);}
+            </code> </p>
+<p><h4>
+4. HSL Values:</h4>
+HSL values provide an alternative way to define colors in CSS. HSL stands for Hue, Saturation, and Lightness. The hue represents the color itself, saturation controls the intensity of the color, and lightness determines how light or dark the color appears. Hue is represented as an angle from 0 to 360 degrees, while saturation and lightness are expressed as percentages ranging from 0% to 100%. For example, hsl(0, 100%, 50%) represents pure red, hsl(120, 100%, 50%) represents pure green, and hsl(240, 100%, 50%) represents pure blue.</p>
+<p>Example: <code>p{
+                color: hsl(0, 100%, 50%);}
+            </code></p>
+    <ul>
+        <li>
+In addition to these basic color formats, CSS also provides various functions and properties for manipulating colors. Some of the commonly used functions include rgba() for specifying colors with an alpha (transparency) channel, hsla() for defining colors with hue, saturation, lightness, and alpha values, and more.</li>
+<li>
+CSS also offers properties like color for setting the text color of an element, background-color for setting the background color of an element, border-color for defining the color of borders around elements, and many others.</li>
+<li>
+Understanding how to use colors effectively in CSS is crucial for creating visually appealing and user-friendly web pages. By utilizing the different color formats and properties available in CSS, designers can achieve their desired aesthetic outcomes.
+</li>
+</ul>
+</article>
+</section>
+        <section class="main-section" id="Box_Model">
+            <header>Box Model</header>
+            <article>
+                <p>
+                    The box model is a fundamental concept in CSS (Cascading Style Sheets) that defines how elements are rendered and displayed on a web page. It describes the structure and layout of elements by considering them as rectangular boxes.</p>
+<ul>
+In CSS, every element on a web page is treated as a box. This includes not only the content of the element but also its padding, border, and margin. The box model consists of four main components:
+<li><h4>
+1. Content: </h4>This is the actual content of the element, such as text, images, or other HTML elements. It is represented by the width and height properties.</li><p>Example:<code>li h4{
+                    width: 200px;
+                    height: 100px;}
+                </code></p>
+<li><h4>
+2. Padding:</h4> Padding is the space between the content and the border of an element. It can be set using the padding property and can have different values for each side of the element (top, right, bottom, left). Padding helps create space around the content and can be used to enhance readability or add visual appeal.</li><p>Example: <code>li h4{
+                    padding: 10px;}
+                </code></p>
+<li><h4>
+3. Border: </h4>The border surrounds the padding and content of an element. It can be styled using various properties such as color, width, and style. The border separates an element from its neighboring elements and provides visual distinction.</li><p>Example: <code>li h4{
+                    border: 2px solid #000;}
+                </code></p>
+<li><h4>
+4. Margin:</h4> Margin is the space outside an element's border. It creates space between elements and helps control their positioning on the page. Like padding, margin can have different values for each side of an element.
+</li>
+<p>Example: <code>li h4{
+                    margin: 10px;}
+                </code></p>
+</ul>
+<p>
+The box model concept in CSS allows developers to control the size, spacing, and positioning of elements on a web page. By manipulating the dimensions of each component (content, padding, border, margin), developers can achieve precise control over the layout and appearance of elements.</p>
+<p>
+To calculate the total width or height of an element including its padding, border, and margin, you need to consider all these components together. The formula for calculating the total width is:</p>
+<p>
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin</p>
+<p>
+Similarly, the formula for calculating the total height is:<p>
+<p>
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin</p>
+<p>
+Understanding the box model is crucial for web developers as it helps them create responsive and visually appealing layouts. By adjusting the dimensions and spacing of elements, developers can ensure that their web pages are displayed consistently across different devices and screen sizes.
+</p>
+<p>
+HTML plays a significant role in implementing the box model concept in CSS. HTML provides the structure and content of a web page, while CSS is responsible for styling and layout. By using HTML tags and attributes, developers can define the structure of elements, and then use CSS to apply styles and manipulate the box model properties.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Flexbox">
+            <header>Flexbox</header>
+            <article>
+                <p>
+Flexbox is a powerful layout mode in CSS that allows developers to create flexible and responsive layouts layouts without the need for complex
+                    positioning and float rules.. Here are the key features of flexbox layouts:<p>
+<ul><li><h4>
+1. Flexible container: </h4>The parent element is considered the flex container, and all its direct children become flex items. The flex container manages the layout of its flex items, including their size, position, and order.</li><p>Example: <code>li h4{
+                    display: flex;}
+                </code></p>
+<li><h4>
+2. Flex direction:</h4> The flex direction determines the main axis of the flex container. It can be set to "row" (default), "row-reverse", "column", or "column-reverse". This setting affects how flex items are laid out and how they interact with each other.</li><p>Example: <code>li h4{
+                    flex-direction: row;}
+                </code></p>
+<li><h4>
+3. Justify-content and align-items properties: </h4>These two properties control how flex items are aligned within the flex container. Justify-content specifies the distribution of flex items along the main axis, while align-items specifies their alignment within the cross axis.</li><p>Example: <code>li h4{   justify-content: center;
+                    align-items: center;}
+                </code></p>
+<li><h4>
+4. Flex-wrap and wrap-order properties:</h4> Flex-wrap controls whether flex items should wrap to the next line when there's no more space on the current line. Wrap-order specifies the order in which flex items wrap to the next line.</li><p>Example: <code>li h4{
+                    flex-wrap: wrap;
+                    flex-wrap: wrap-reverse;}
+                </code></p>
+<li><h4>
+5. Flex basis and grow properties: </h4>Flex basis sets the initial size of a flex item, while grow determines how much the item can grow or shrink based on the available space.</li><p>Example: <code>li h4{
+                    flex-basis: 100px;
+                    flex-grow: 1;}
+                </code></p>
+<li><h4>
+6. Flex-shrink property:</h4> This property determines how much a flex item should shrink when there's not enough space to fit all the items in the flex container.</li><p>Example:<code>li h4{
+                    flex-shrink: 1;}
+                </code></p>
+<li><h4>7. Ordering and alignment:</h4> Flexbox provides various ways to control the ordering and alignment of flex items, such as using the order property to move items up or down the stacking order, or using the justify-content and align-items properties to align items horizontally and vertically.<li><p>Example:<code>li h4{
+                    order: 2;}
+                </code></p>
+</ul>
+<p>
+<ul>
+Common use cases for flexbox layouts include:
+<li><h4>
+1. Creating responsive layouts: </h4>Flexbox makes it easy to create responsive layouts that adapt to different screen sizes and orientations.</li><p>Example: <code>
+                    @media (max-width: 768px) {li h4 {
+                        flex-direction: column;}
+                    }
+                </code></p>
+<li><h4>
+2. Centering content:</h4> Flexbox provides a simple way to center content both horizontally and vertically.</li>
+<p>Example: <code>li h4{
+                    justify-content: center;
+                    align-items: center;}
+                </code></p>
+<li><h4>
+3. Creating complex layouts: </h4>Flexbox allows developers to create complex layouts with multiple rows and columns, and with varying item sizes and spacings.</li><p>Example: <code>li h4{
+                    flex-wrap: wrap;}
+                </code></p>
+<li><h4>
+4. Replacing tables:</h4> Flexbox can be used to replace tables for simpler, more maintainable layouts.</li>
+<p>Example: <code>li h4{
+                    display: flex;
+                    flex-direction: row;}
+                </code></p>
+</ul>
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Animations">
+            <header>Animations</header>
+            <article>
+                <p>           
+Animations in CSS are a powerful tool for adding visual interest and interactivity to web pages. With CSS animations, developers can create dynamic and engaging user experiences by animating various elements on a webpage, such as text, images, and backgrounds.</p>
+<p>
+To create animations in CSS, developers can use the `@keyframes` rule along with the `animation` property. The `@keyframes` rule defines the animation's keyframes, which are the intermediate steps between the start and end states of the animation. The `animation` property is then used to apply the animation to an element and specify its duration, timing function, delay, and other properties.</p>
+<ul>
+To start using animations in CSS, it is important to understand the key components involved:
+<li><h4>
+1. @keyframes:</h4> The `@keyframes` rule is used to define the intermediate steps or keyframes of an animation. It allows developers to specify different styles at different points during the animation. Each keyframe is defined with a percentage value (from 0% to 100%) or a specific keyword (`from` or `to`) that represents the start and end states of the animation.</li>
+<code>
+For example, consider a simple fade-in animation:
+<br>
+```css
+@keyframes fadeIn {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+```</code>
+<p>
+In this example, the `fadeIn` animation starts with an opacity of 0 (fully transparent) at 0% and ends with an opacity of 1 (fully opaque) at 100%.</p>
+<li><h4>
+2. animation-name:</h4> The `animation-name` property is used to specify the name of the animation defined by `@keyframes`. This property is applied to the element that should be animated.</li>
+<code>
+```css
+.element {
+animation-name: fadeIn;
+}
+```</code>
+<p>
+In this example, the `.element` will be animated using the `fadeIn` animation.</p>
+<li><h4>
+3. animation-duration: </h4>The `animation-duration` property specifies the duration of the animation in seconds or milliseconds. It determines how long it takes for the animation to complete one cycle.</li>
+<code>
+```css
+.element {
+animation-duration: 2s;
+}
+```</code>
+<p>
+In this example, the `.element` will take 2 seconds to complete one cycle of the animation.</p>
+<p>
+These are just a few of the many properties available for CSS animations. Other properties include `animation-timing-function` (to control the speed of the animation), `animation-delay` (to specify a delay before the animation starts), `animation-iteration-count` (to define how many times the animation should repeat), and `animation-fill-mode` (to specify how the element should be styled before and after the animation).</p>
+<p>
+CSS animations can also be combined with other CSS features, such as transitions and transforms, to create more complex and visually appealing effects. Transitions allow smooth changes between different states of an element, while transforms enable developers to manipulate an element's position, size, and rotation.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
