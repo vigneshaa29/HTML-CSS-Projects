@@ -1,0 +1,138 @@
+/* Add your styles here */
+
+/* Ensure the navbar is at the top */
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Style the header */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#product-name {
+    font-size: 32px;
+	padding:2px;
+	margin:10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+/* Style the navigation bar */
+#nav-bar {
+    margin-top: 20px;
+}
+
+/* Style the sections */
+section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the video iframe */
+#video {
+    width: 600px;
+    height: 300px;
+	display:block;
+    border: none;
+	margin: 0 auto;
+}
+
+/* Style the form */
+#form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#email {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the product details section */
+#product-details {
+    text-align: center;
+}
+
+#product-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+#buy-now {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #nav-bar {
+        text-align: center;
+    }
+
+    .nav-link {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust font sizes and padding for smaller screens */
+    #product-name {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #product-img {
+        max-width: 90%;
+    }
+
+    #buy-now {
+        padding: 8px 16px;
+    }
+}
